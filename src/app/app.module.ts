@@ -14,20 +14,22 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 import { AppComponent } from './app.component';
 import { EspService } from '../services/esp.service';
+import { LoginComponent } from './login/login.component';
+import { AuthenticationService } from 'src/services/authentication.service';
 
 // Initialize Firebase
-const firebaseConfig: any = {
-  apiKey: "AIzaSyA4SP-I4RxEd3wz5QpMYqQVTLQRNRWDwnE",
-  authDomain: "esp4a-iot-4068b.firebaseapp.com",
-  databaseURL: "https://esp4a-iot-4068b.firebaseio.com",
-  projectId: "esp4a-iot-4068b",
-  storageBucket: "esp4a-iot-4068b.appspot.com",
-  messagingSenderId: "32131762609"
+export const firebaseConfig = {
+  apiKey: "AIzaSyAuvUmILUVmpyR6-FXgkxLKPlzpCQID30o",
+  authDomain: "login-c31aa.firebaseapp.com",
+  databaseURL: "https://login-c31aa.firebaseio.com",
+  storageBucket: "login-c31aa.appspot.com",
+  messagingSenderId: "660576219686"
 };
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +41,7 @@ const firebaseConfig: any = {
     AngularFireStorageModule,
     AngularFireDatabaseModule,
   ],
-  providers: [],
+  providers: [AuthenticationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

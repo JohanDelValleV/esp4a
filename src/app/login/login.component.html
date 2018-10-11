@@ -1,0 +1,23 @@
+<!-- <mat-toolbar class="toolbar"><h1 class="title">adpo</h1></mat-toolbar> -->
+<mat-card class="card1">
+    <div class="contenedor"> 
+        <h1 class="adpo">adpo</h1>
+        <mat-form-field>
+            <input matInput placeholder="Correo electrónico" class="email" type="email">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Contraseña" type="password" class="password">
+        </mat-form-field>
+        <h1 class="forgotpassword">¿Olvidaste tu contraseña?</h1>
+  
+        <div class="buttons">
+            <button mat-raised-button class="primary-button">Iniciar sesión</button>
+            <button mat-raised-button class="google-button" (click)="login()" matTooltip="Inicia sesión con tu cuenta de Google"><img src="https://vignette.wikia.nocookie.net/polandball/images/5/51/Google.png/revision/latest?cb=20171210134732" height="20px" class="google"></button>
+            <button mat-button class="create-account">Crear cuenta</button>
+        </div>
+            
+    </div>
+  
+    
+  </mat-card>
+  

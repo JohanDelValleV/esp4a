@@ -1,0 +1,53 @@
+.card1{
+    margin-top: 30px;
+    margin-bottom:30px;
+    margin-right: 475px;
+    margin-left: 475px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.contenedor{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+
+}
+.adpo{
+    font-family: 'Comfortaa', bold;
+    color: #00ACC1;
+    font-size: 70px;
+}
+
+.contenedor > *{
+   width: 100%;
+}
+.google-button{
+    background-color: #FFFFFF;
+    margin-left: 10px;
+    border-radius: 5px;
+
+}
+.primary-button{
+    background-color: #00B8D4;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+.google{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.buttons{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.forgotpassword{
+    color: #00B8D4;
+    font-size: 15px;
+}
+.create-account{
+    color: #00B8D4;
+    font-size: 15px;
+    margin-top : 10px;
+    border-radius: 5px;
+}

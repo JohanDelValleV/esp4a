@@ -18,9 +18,11 @@
 </ul>
  -->
  <mat-toolbar color="primary">
-  <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+  <button mat-button [matMenuTriggerFor]="menu" matTooltip="Encender/Apagar">Menu</button>
   <mat-menu #menu="matMenu">
-    <button mat-menu-item>Encender</button>
+    <button mat-menu-item style="display: flex">Encender</button>
     <button mat-menu-item>Apagar</button>
   </mat-menu>
 </mat-toolbar>
+
+
