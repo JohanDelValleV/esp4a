@@ -16,12 +16,15 @@ import { AppComponent } from './app.component';
 import { EspService } from '../services/esp.service';
 import { LoginComponent } from './login/login.component';
 import { AuthenticationService } from 'src/services/authentication.service';
+import { GraficaComponent } from './grafica/grafica.component';
+import { GraficaService } from 'src/services/grafica.service';
 
 // Initialize Firebase
 export const firebaseConfig = {
   apiKey: "AIzaSyAuvUmILUVmpyR6-FXgkxLKPlzpCQID30o",
   authDomain: "login-c31aa.firebaseapp.com",
   databaseURL: "https://login-c31aa.firebaseio.com",
+  projectId: "login-c31aa",
   storageBucket: "login-c31aa.appspot.com",
   messagingSenderId: "660576219686"
 };
@@ -29,7 +32,8 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    GraficaComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +45,7 @@ export const firebaseConfig = {
     AngularFireStorageModule,
     AngularFireDatabaseModule,
   ],
-  providers: [AuthenticationService],
+  providers: [AuthenticationService, EspService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

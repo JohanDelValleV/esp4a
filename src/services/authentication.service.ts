@@ -7,7 +7,11 @@ export class AuthenticationService{
     constructor(public afAuth: AngularFireAuth){
 
     }
-    login(){
+    signInWithGoogle(){
         return this.afAuth.auth.signInWithPopup(new auth.GoogleAuthProvider());
+    }
+
+    signInWithFacebook(){
+        return this.afAuth.auth.signInWithPopup(new auth.FacebookAuthProvider());
     }
 }
